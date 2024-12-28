@@ -1,0 +1,19 @@
+h1 {
+    font-size: 5em;
+}
+
+#profile_pic {
+    height: 75vh;
+    
+    /* height: 500px; 
+    */
+}
+
+.social-icon{
+    height: 50px;
+}
+
+body{
+    color: rgb(125, 70, 176);
+}
+
