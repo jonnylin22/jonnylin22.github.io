@@ -3,10 +3,9 @@ h1 {
 }
 
 #profile_pic {
-    height: 75vh;
-    
-    /* height: 500px; 
-    */
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
 }
 
 .social-icon{
@@ -14,6 +13,9 @@ h1 {
 }
 
 body{
-    color: rgb(214, 115, 214);
+    color: rgb(255, 255, 255);
 }
 
+body {
+    background-color: gray;
+}
