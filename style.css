@@ -21,6 +21,10 @@ body {
     background-color: gray;
 }
 
+a:hover {
+    color: blue;
+}
+
 .social-icon {
     height: 50px;
     display: flex;
