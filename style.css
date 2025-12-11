@@ -28,8 +28,24 @@ body {
     background-color: rgb(31, 28, 28);
 }
 
+/* Link styling */
+a {
+    color: #00bfff; /* Unvisited link color (deep sky blue) */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9370db; /* Visited link color (medium purple) */
+}
+
 a:hover {
-    color: blue;
+    color: #ff6347; /* Hover color (tomato red) */
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1); /* Light highlight on hover */
+}
+
+a:active {
+    color: #ffd700; /* Active/clicked color (gold) */
 }
 
 .social-icon {
