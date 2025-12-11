@@ -6,35 +6,59 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="container"> 
-            <div> <img src="images/square-cake2.jpg" alt="Picture of Jonathan with cake" id="profile_pic" >  </div>
-            <div> <h1> Jonathan Lin </h1> </div>
-        </div>
-        <div>
-            <p> Welcome to my personal website! 
-                I'm currently a 2nd year Computer Engineering student at UCI! </p> 
-            <a href="https://docs.google.com/document/d/1IVisv-Ay3SVM8zc8yKCgjjL7iZOMuls2Y8hFJR96AbQ/edit?usp=sharing" 
-                target="_blank" >
-                My Resume </a> <br>
-            <a href="https://google.com" target="_blank">
-                Google's Website </a>
-            
-            <h2> My favorite foods! </h2>
-            <ul>
-                <li> Rice </li>
-                <li> Ramen </li>
-                <li> Strawberries </li>
-                <li> Steak </li>
-            </ul>
-        </div>
-        <div class="social-icon">
-            <a href="https://instagram.com/_jonny_lin" target="_blank" class="icon" style="margin-right: 15px;">
-                <img src="images/instagram.png" alt="My Instagram">
-            </a>
-            <a href="https://github.com/jonnylin22" target="_blank" class="icon">
-                <img src="images/github-square-svgrepo-com.svg" alt="My GitHub">
-            </a>
-        </div>
+        <main>
+            <section id="slides-section">
+                <h1>Projects Portfolio Presentation</h1>
+                <div id="slides-container" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <style>
+            #slides-section { max-width:1100px; margin:32px auto; padding:0 16px; }
+            #slides-section h1 { text-align:center; margin-bottom:12px; }
+            #slides-container img { display:block; margin:18px auto; max-width:100%; height:auto; box-shadow:0 6px 18px rgba(0,0,0,0.12); border-radius:6px; }
+        </style>
+
+        <script>
+            // List of slide image filenames (keeps order)
+            const slideFiles = [
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-1.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-2.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-3.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-4.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-5.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-6.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-7.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-8.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-9.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-10.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-11.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-12.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-13.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-14.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-15.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-16.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-17.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-18.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-19.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-20.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-21.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-22.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-23.png",
+                "Jonathan Lin Engineering Portfolio 12_10_2025 - Slides-24.png"
+            ];
+
+            const container = document.getElementById('slides-container');
+
+            slideFiles.forEach((fname, idx) => {
+                const img = document.createElement('img');
+                img.alt = `Slide ${idx + 1}`;
+                // Use encodeURI to safely handle spaces and special chars
+                img.src = encodeURI('slides/' + fname);
+                container.appendChild(img);
+            });
+        </script>
+
     </body>
 
 </html>
