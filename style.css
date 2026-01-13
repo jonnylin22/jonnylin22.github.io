@@ -1,10 +1,18 @@
 h1 {
     font-size: 5em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Courier New', 'DejaVu Sans Mono', 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    text-shadow: 0.03em 0 0 currentColor;
+    font-weight: bolder;
 }
 
 div {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Courier New', 'DejaVu Sans Mono', 'Ubuntu Mono', monospace;
+    font-weight: 600;
+    text-shadow:
+        0.03em 0 0 currentColor,
+        -0.03em 0 0 currentColor;    
+    font-weight: bolder;
 }
 
 #profile_pic {
@@ -17,15 +25,21 @@ div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 }
 
 body{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', 'DejaVu Sans Mono', 'Ubuntu Mono', monospace;
+    font-weight: 600;
+    text-shadow:
+        0.03em 0 0 currentColor,
+        -0.03em 0 0 currentColor;
+    font-weight: bolder;
 }
 
 body {
-    background-color: rgb(31, 28, 28);
+    background-color: #F2F0EF;
 }
 
 /* Link styling */
@@ -85,4 +99,37 @@ a:active {
 
 .icon:hover::after {
     transform: translate(-50%, -50%) scale(1); /* Circle appears on hover */
+}
+
+.center-container {
+    display: flex;         /* Activate Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Make the container full viewport height */
+    width: 100%;             /* Ensure container spans full width */
+    margin: 0;               /* Remove default body margins if any */
+}
+
+img {
+    max-width: 100%;         /* Ensure image is responsive */
+    height: auto;
+}
+
+.center-img {
+    display: block;  /* Images are inline by default; make it a block element */
+    margin-left: auto; /* Push from the left */
+    margin-right: auto; /* Push from the right */
+    max-width: 100%;
+    height: auto;
+    /* Add vertical margin if needed */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300; /* Full viewport height */
 }
