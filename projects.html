@@ -14,21 +14,25 @@
             <h1>Featured Projects</h1>
             
             <div class="projects-container">
-                <div class="project-card">
-                    <img src="images/project1.png" alt="Project 1">
-                    <div class="project-info">
-                        <h3>Project Title 1</h3>
-                        <p class="project-date">Jan 13, 2026</p>
+                <a href="xcvr-board.html" class="project-link">
+                    <div class="project-card">
+                        <img src="project-pics/CubeSat-XCVR-Board/CubeSat-XCVR-Board-Header.jpg" alt="Project 1">
+                        <div class="project-info">
+                            <h3>CubeSat RF Transceiver Board</h3>
+                            <p class="project-date">January 2026</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
-                    <img src="images/project2.png" alt="Project 2">
-                    <div class="project-info">
-                        <h3>Project Title 2</h3>
-                        <p class="project-date">Jan 13, 2026</p>
+                <a href="#" class="project-link">
+                    <div class="project-card">
+                        <img src="images/project2.png" alt="Project 2">
+                        <div class="project-info">
+                            <h3>Project Title 2</h3>
+                            <p class="project-date">Jan 13, 2026</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
     </main>
@@ -39,14 +43,17 @@
         #projects-section h1 { text-align:center; margin-bottom:24px; color:#333; }        
         .projects-container { display:flex; flex-direction:column; gap:24px; }
         
-        .project-card { display:flex; gap:20px; align-items:flex-start; padding:16px; border-radius:8px; transition:all 0.3s ease; }
-        .project-card:hover { background-color:#f5f5f5; }
+        .project-link { text-decoration:none; color:inherit; }
+        .project-link:hover { text-decoration:none; }
         
-        .project-card img { width:150px; height:150px; border-radius:6px; object-fit:cover; flex-shrink:0; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+        .project-card { display:flex; gap:20px; align-items:flex-start; padding:16px; border-radius:8px; transition:all 0.3s ease; cursor:pointer; }
+        .project-card:hover { background-color:#BA9D8A; }
+        
+        .project-card img { width:300px; height:300px; border-radius:6px; object-fit:cover; flex-shrink:0; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
         
         .project-info { flex:1; }
-        .project-info h3 { margin:0 0 8px 0; font-size:1.3em; color:#333; }
-        .project-date { margin:0; color:#999; font-size:0.95em; }
+        .project-info h3 { margin:0 0 8px 0; font-size:2em; color:#333; }
+        .project-date { margin:0; color:#030303; font-size:0.95em; }
     </style>
 </body>
 </html>

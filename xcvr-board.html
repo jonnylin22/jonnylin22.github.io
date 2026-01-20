@@ -1,0 +1,95 @@
+<html>
+    <head> 
+        <title> Jonathan's Website</title>
+        <link rel="icon" type="image/akatsuki-icon" href="images/akatsuki.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="navbar.js"></script>
+    </head>
+    <body>
+
+        <main>
+            <section id="slides-section">
+                <!-- <h1>Projects Portfolio Presentation</h1> -->
+                <div id="slides-container" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <style>
+            :root { --button-width: 200px; }
+            #slides-section { max-width:1100px; margin:32px auto; padding:0 16px; }
+            #slides-section h1 { text-align:center; margin-bottom:12px; }
+            #slides-container img { display:block; margin:18px auto; max-width:100%; height:auto; box-shadow:0 6px 18px rgba(0,0,0,0.12); border-radius:6px; }
+            #source img { display:block; margin:18px auto; max-width:100%; height:auto; box-shadow:0 6px 18px rgba(0,0,0,0.12); border-radius:6px; }
+        </style>
+
+        <script>
+            // List of slide image filenames (keeps order)
+            const slideFiles = [
+                "CubeSat-XCVR-Board-01.png",
+                "CubeSat-XCVR-Board-02.png",
+                "CubeSat-XCVR-Board-03.png",
+                "CubeSat-XCVR-Board-04.png",
+                "CubeSat-XCVR-Board-05.png",
+                "CubeSat-XCVR-Board-06.png",
+                "CubeSat-XCVR-Board-07.png",
+                "CubeSat-XCVR-Board-08.png",
+                "CubeSat-XCVR-Board-09.png",
+                "CubeSat-XCVR-Board-10.png",
+                "CubeSat-XCVR-Board-11.png",
+                "CubeSat-XCVR-Board-12.png",
+                "CubeSat-XCVR-Board-13.png",
+                "CubeSat-XCVR-Board-14.png",
+                "CubeSat-XCVR-Board-15.png",
+                "CubeSat-XCVR-Board-16.png",
+                "CubeSat-XCVR-Board-17.png",
+                "CubeSat-XCVR-Board-18.png",
+                "CubeSat-XCVR-Board-19.png",
+                "CubeSat-XCVR-Board-20.png",
+                "CubeSat-XCVR-Board-21.png",
+                "CubeSat-XCVR-Board-22.png",
+                "CubeSat-XCVR-Board-23.png",
+                "CubeSat-XCVR-Board-24.png",
+                "CubeSat-XCVR-Board-25.png",
+                "CubeSat-XCVR-Board-26.png",
+                "CubeSat-XCVR-Board-27.png",
+                "CubeSat-XCVR-Board-28.png",
+                "CubeSat-XCVR-Board-29.png",
+                "CubeSat-XCVR-Board-30.png",
+                "CubeSat-XCVR-Board-31.png",
+                "CubeSat-XCVR-Board-32.png",
+                "CubeSat-XCVR-Board-33.png",
+                "CubeSat-XCVR-Board-34.png",
+                "CubeSat-XCVR-Board-35.png",
+                "CubeSat-XCVR-Board-36.png",
+                "CubeSat-XCVR-Board-37.png",
+                "CubeSat-XCVR-Board-38.png",
+                "CubeSat-XCVR-Board-39.png",
+                "CubeSat-XCVR-Board-40.png",
+                "CubeSat-XCVR-Board-41.png",
+                "CubeSat-XCVR-Board-42.png",
+                "CubeSat-XCVR-Board-43.png",
+                "CubeSat-XCVR-Board-44.png",
+                "CubeSat-XCVR-Board-45.png",
+                "CubeSat-XCVR-Board-46.png",
+                "CubeSat-XCVR-Board-47.png",
+                "CubeSat-XCVR-Board-48.png",
+                "CubeSat-XCVR-Board-49.png",
+                "CubeSat-XCVR-Board-50.png"
+            ];
+
+            const container = document.getElementById('slides-container');
+
+            slideFiles.forEach((fname, idx) => {
+                const img = document.createElement('img');
+                img.alt = `Slide ${idx + 1}`;
+                // Use encodeURI to safely handle spaces and special chars
+                img.src = encodeURI('project-pics/CubeSat-XCVR-Board/' + fname);
+                container.appendChild(img);
+            });
+        </script>
+
+    </body>
+
+</html>
+
