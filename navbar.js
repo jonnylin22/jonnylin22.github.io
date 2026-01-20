@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         #GitHub-btn { display:inline-block; width:var(--button-width); padding:10px 0; font-size:1.8em; color:#333; text-decoration:none; background-color:#fff; border:2px solid #333; border-radius:4px; font-weight:500; transition:all 0.2s; text-align:center; }
         #Portfolio-btn { display:inline-block; width:var(--button-width); padding:10px 0; font-size:1.8em; color:#333; text-decoration:none; background-color:#fff; border:2px solid #333; border-radius:4px; font-weight:500; transition:all 0.2s; text-align:center; }
         #Projects { display:inline-block; width:var(--button-width); padding:10px 0; font-size:1.8em; color:#333; text-decoration:none; background-color:#fff; border:2px solid #333; border-radius:4px; font-weight:500; transition:all 0.2s; text-align:center; }
+        #Home-btn:hover { background-color:#333; color:#fff; }
         #LinkedIn-btn:hover { background-color:#333; color:#fff; }
         #resume-btn:hover { background-color:#333; color:#fff; }
         #GitHub-btn:hover { background-color:#333; color:#fff; }
