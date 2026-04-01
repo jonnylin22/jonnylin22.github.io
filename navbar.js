@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="index.html" id="Home-btn">Home</a>
             <a href="https://www.linkedin.com/in/linjonathan001/" id="LinkedIn-btn">LinkedIn</a>
             <a href="portfolio.html" id="Portfolio-btn">Portfolio</a>
-            <a href="https://github.com/jonnylin22" id="GitHub-btn">Github</a>
+            <a href="https://github.com/jonnylin22" id="GitHub-btn">GitHub</a>
             <a href="projects.html" id="Projects">Projects</a>
         </div>
     `;
